@@ -1,0 +1,17 @@
+:root {
+  --primary: #0E4F5C;
+  --ink: #10262B;
+  --background: #FBFAF7;
+  --mist: #E8F1F0;
+  --coral: #E07A5F;
+  --line: #D9E4E3;
+  --white: #F7FCFB;
+  --muted: #455D60;
+  --error: #9B3326;
+  --shadow: #10262B38;
+  --scrim: #10262B99;
+  --headingFont: "Fraunces";
+  --bodyFont: "Manrope";
+  --radius: 8px;
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+}

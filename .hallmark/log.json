@@ -1,0 +1,27 @@
+[
+ {
+  "shape": "Photo-led clinic directory",
+  "theme": "teal (by request)",
+  "axes": "light/roman-serif/cool",
+  "hero": "Left editorial headline beside an empty treatment room",
+  "nav": "Status bar and sticky navigation",
+  "footer": "Three columns with opening hours and credits",
+  "imagery": "Pexels room and instruments, labelled sample slots",
+  "photos": [
+   "room.jpg",
+   "tools.jpg",
+   "model.jpg"
+  ],
+  "entry": "index.html",
+  "fingerprint": "clearwater-gujranwala-photo-directory",
+  "sections": "Treatments, reassurance, team, results, reels, booking, pricing, FAQs, journal, visit",
+  "signature": "The treatment room before the patient arrives",
+  "waived": [
+   "hover zoom requested",
+   "long homepage structure requested"
+  ],
+  "prompt": "Premium rebrandable dental demo",
+  "date": "2026-11-09",
+  "mode": "build"
+ }
+]

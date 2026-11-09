@@ -1,0 +1,14 @@
+# Rebrand Clearwater Dental
+
+Open [index.html](index.html) to preview the site. An ordinary static web host can serve the folder as-is. For a local HTTP preview, run `python -m http.server 8765` in this folder and open `http://localhost:8765/`.
+
+Try `index.html?theme=teal`, `index.html?theme=navy` or `index.html?theme=warm`. The choice follows internal links. Remove the parameter to return to the default in the config.
+
+1. **Set the clinic identity.** Open [assets/config.js](assets/config.js). Update the name, tagline, headline, introduction, city, verified address, map links, published website URL, email, call and emergency lines, social profiles and WhatsApp digits. Confirm the weekly hours in Pakistan time. Multiple ranges support midday closures. During the demo, Call and Emergency use the supplied WhatsApp number as a telephone fallback.
+2. **Set the look and add photos.** Choose `defaultTheme` and edit the theme tokens or presets. Drop optimised images into the folder and point config entries at them using relative paths. A photo uses `{src, alt, caption}` with caption optional. Use a landscape clinic photo about 1500px wide, 4:5 doctor portraits and landscape treatment images. Update credits when replacing stock.
+3. **Set the team and treatments.** Replace the sample profile with up to eight verified profiles. Give each an ID, verified name, role, qualifications, speciality, bio, portrait, languages and availability. Add years only if verified. Edit service rows or use the named fields produced by the existing mapping. Use a numeric PKR starting price or leave it null. Confirm durations, FAQs and the featured service list.
+4. **Add verified proof.** Use `{quote, name}` for approved reviews and enter the real Google rating, count and profile URL in `clinic`. Use `{title, category, before, after, consent:true}` for cases with documented consent. Match the angle and crop of both photos. Use `{title, poster, mp4}` for 9:16 local clips or set `instagram` to the provider’s embed URL. Add confirmed technology using `{title, description}` and verified figures using `{label, value}`. Empty arrays hide their sections. Remove the sample case, profile and reels before turning off the demo.
+5. **Build and check.** Set `clinic.demo` to `false` once the clinic approves its details, then run `node build.cjs` with Node.js 18 or newer. This refreshes the static content, search metadata, social previews, theme fallback and service pages from config. Remove obsolete generated HTML files if you delete or rename a service slug. Open the home, booking and contact pages on a phone and test the clinic’s WhatsApp, telephone and directions before publishing.
+
+Use one config file for all copy and data that identifies the clinic. The build has no package dependencies. The site uses Google Fonts and the configured map embed, which require internet access.
+
